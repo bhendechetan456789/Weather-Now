@@ -1,0 +1,139 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 500px;
+  width: 95%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 15px;
+}
+
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+p {
+  font-size: 15px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.search-box {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 10px;
+  flex: 1 1 200px;
+  min-width: 150px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.search-box input:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.4);
+}
+
+.search-box button {
+  padding: 10px 18px;
+  border: none;
+  background-color: #0077ff;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+  background-color: #005ec2;
+}
+
+
+.error {
+  margin-top: 15px;
+  color: red;
+  font-weight: bold;
+}
+
+
+.weather-info {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f0f8ff;
+  border-radius: 10px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.weather-info h2 {
+  margin-bottom: 12px;
+  color: #2c3e50;
+  font-size: 20px;
+}
+
+.weather-info p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box input,
+  .search-box button {
+    width: 100%;
+    margin: 4px 0;
+    font-size: 14px;
+  }
+
+  .weather-info {
+    padding: 15px;
+  }
+
+  .weather-info h2 {
+    font-size: 18px;
+  }
+
+  .weather-info p {
+    font-size: 13px;
+  }
+}
