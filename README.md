@@ -34,3 +34,9 @@ cd weather-now
 npm install
 npm run dev
 ```
+
+https://jvqjh3-5173.csb.app/
+live demo link (codesandbox)
+
+this is demo link loom
+https://www.loom.com/share/38b0c16256104451a3bf8e9488aaf07a?sid=39c87b1b-5a16-4afa-909a-d28af6f59ebf
